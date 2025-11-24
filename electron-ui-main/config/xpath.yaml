@@ -1,0 +1,39 @@
+登录:
+  用户名: 测试专用
+  密码: 123456
+  登录按钮: //button[span[text()="登 录"]]
+
+目录:
+  收起展开: //div[@class="hamburger"]//i
+  
+空间管理:
+  翻页-下一页: //div[@class="page-controller"]//div[contains(@class, "to-right")]
+  翻页-上一页: //div[@class="page-controller"]//div[contains(@class, "to-left")]
+  空间列表-页码: (//div[@class="page-index"]//div)[{}]
+  空间名称: //div[@class="space"]//div[p[@class="content-name" and text()="{}"]]
+  机器名称: //div[@class="device-title"]//span[text()="{}"]
+
+  光学调试: //div[@class="right-bar"]//div[text()="光学调试"]
+  点击产品输入框: //div[p[text()="机器加载产品:"]]//input[@placeholder="请选择"]
+  点击具体产品: //ul[@role="listbox"]//span[contains(@class, "el-tooltip__trigger") and text()="SPF0617-1"]
+
+  点击成像模组输入框: //div[p[text()="成像模组:"]]//input[@placeholder="请选择"]
+  点击具体成像模组: //ul[@role="listbox"]//span[text()="常州测试用basler成像模组_241205"]
+
+  点击产品位姿输入框: //div[p[text()="产品位姿:"]]//input[@placeholder="请选择"]
+  点击具体产品位姿: //ul[@role="listbox"]//span[text()="SPF0617-1" and not(contains(@class, "el-tooltip__trigger"))]
+
+  产品位姿选择确认: //div[@class="control-flatpiece"]//button[span[text()="确定"]]
+  
+  光学方案tab: //div[@class="content"]//div[@id="tab-switchTab"]
+
+  返回按钮: //div//img[@class="back-button"]
+  终止调试: //div[@class="right-bar"]//div[text()="终止调试"]
+
+  点位列表: //div[@id="tab-point"]
+  
+  保存方案历史: //span[text()="保存方案历史"]
+  方案名输入框: //div[@class="dialog-content"]//input
+  方案名确认: //div[@class="el-dialog__footer"]//button//span[text()="确定"]
+  保存成功提示: //p[@class="el-message__content" and text()="保存成功"]
+  
